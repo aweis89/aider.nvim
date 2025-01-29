@@ -4,7 +4,7 @@ local utils = require("aider.utils")
 local notify = require("aider.notify")
 local aider = require("aider.aider")
 
----@class AiderTerminal
+---@class AiderToggleterm
 ---@field __term table<string, Terminal> Map of CWD to Terminal instances
 local M = {
   __term = {},

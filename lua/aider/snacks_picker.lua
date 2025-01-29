@@ -24,7 +24,7 @@ end
 
 ---@param opts snacks.picker.Config
 ---@type snacks.picker.finder
-function git_stash_finder(opts, ctx)
+local function git_stash_finder(opts, ctx)
   local stash_msg_prefix = require("aider.aider").StashMsgPrefix
   local args = {
     "stash", "list",

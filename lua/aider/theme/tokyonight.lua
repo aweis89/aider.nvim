@@ -2,9 +2,11 @@ local M = {}
 
 ---@type tokyonight.HighlightsFn
 local function set_tokyonight_theme(c, _)
+  local util = require("tokyonight.util")
+
   return {
     user_input_color = c.green2,
-    tool_output_color = c.blue,
+    tool_output_color = c.blue0,
     tool_error_color = c.red1,
     tool_warning_color = c.orange,
     assistant_output_color = c.blue0,
