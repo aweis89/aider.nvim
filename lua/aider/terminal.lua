@@ -1,5 +1,7 @@
 local config = require("aider").config
-if vim.env.TMUX and config.use_tmux then
-	return require("aider.tmux")
+
+if config.use_toggleterm then
+  return require("aider.toggleterm")
 end
-return require("aider.toggleterm")
+
+return require("aider.snacksterm")
